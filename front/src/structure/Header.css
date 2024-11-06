@@ -4,6 +4,15 @@ body, html {
     box-sizing: border-box;
 }
 
+.HeaderCompleto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+
 /* Banner superior */
 .banner-header img {
     width: 100%;
@@ -121,25 +130,35 @@ body, html {
     text-align: center;
 }
 
-.user-link-container img {
-    height: 24px;
-    
-}
-
-.user-link-container span {
-
-    font-size: 14px;
-    color: white;
-    
-}
-
 .user-link-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 6px;
-    
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    outline: none; /* Quita el contorno del foco */
+    padding: 0; /* Quita cualquier padding */
+    cursor: pointer;
 }
+
+.user-link-container img {
+    height: 24px;
+}
+.user-link-container button {
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    outline: none; /* Quita el contorno cuando se hace clic */
+    padding: 0; /* Quita cualquier padding */
+    cursor: pointer;
+}
+
+
+.user-link-container span {
+    font-size: 14px;
+    color: white;
+}
+
 
 /* Header-bottom */
 .header-bottom {
@@ -183,3 +202,90 @@ body, html {
     text-decoration: underline;
 }
 
+/* boton desplegable*/
+/* Vista desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #f5f5f5; /* Color de fondo gris */
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: 'Times New Roman', serif; /* Fuente ajustada */
+}
+
+.dropdown-menu h2 {
+    margin-top: 0;
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+}
+
+.dropdown-menu button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background: #f0042c;
+    color: white;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    width: 90%;
+    font-family: 'Times New Roman', serif; /* Fuente ajustada */
+}
+
+.dropdown-menu button:hover {
+    background: #c00324;
+}
+
+.input-field {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', serif;
+}
+
+
+
+
+/* Estilo de los títulos */
+.modal-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los botones */
+.modal-button {
+    background-color: #f0042c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-button:hover {
+    background-color: #d00327;
+}
+
+/* Enlace de texto */
+.modal-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.modal-container a:hover {
+    text-decoration: underline;
+}
