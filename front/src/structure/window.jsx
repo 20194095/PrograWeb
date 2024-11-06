@@ -37,24 +37,33 @@ const DropdownMenu = ({ handleClose }) => {
             </form>
           </>
         );
-      case 3:
-        return (
-          <>
-            <h2>Ingresa tus Credenciales</h2>
-            <form>
-              <input type="email" placeholder="Correo" className="input-field" />
-              <input
-                type="password"
-                placeholder="Contraseña"
-                className="input-field"
-              />
-              <button type="submit" className="modal-button">Entrar</button>
-              <button type="button" className="modal-button" onClick={() => setView(1)}>
-                Volver
-              </button>
-            </form>
-          </>
-        );
+        case 3:
+  return (
+    <>
+      <h2 className="modal-title">Ingresa tus Credenciales</h2>
+      <form className="modal-form">
+        <input type="email" placeholder="Correo" className="input-field" />
+        <input
+          type="password"
+          placeholder="Contraseña"
+          className="input-field"
+        />
+        <div className="password-options">
+          <a href="/" className="forgot-password-link" onClick={() => setView(2)}>Olvidé mi contraseña</a>
+        </div>
+        <div className="button-container">
+          <button type="submit" className="modal-button">Entrar</button>
+          <button type="button" className="modal-button modal-button-secondary" onClick={() => setView(1)}>
+            Volver
+          </button>
+        </div>
+      </form>
+      <p className="register-text">
+        <a href="#" className="register-link" onClick={() => setView(2)}>¿No tienes una cuenta? Regístrese</a>
+      </p>
+    </>
+  );
+
       default:
         return null;
     }
