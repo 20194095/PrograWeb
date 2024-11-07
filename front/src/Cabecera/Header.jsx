@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
-import logo from '../images/Logo.png';
-import carrito from '../images/carrito.png';
-import login from '../images/login.png';
-import lupa from '../images/lupa.png';
-import bannerHeader from '../images/bannerheader.png';
-import ubicacion from '../images/ubicacion.png';
-import categorias from '../images/barrasrojas.png';
-import cohete from '../images/cohete.png';
-import jbl from '../images/jbl.png';
-import apple from '../images/apple.png';
+import logo from '../imagesCabecera/Logo.png';
+import carrito from '../imagesCabecera/carrito.png';
+import login from '../imagesCabecera/login.png';
+import lupa from '../imagesCabecera/lupa.png';
+import bannerHeader from '../imagesCabecera/bannerheader.png';
+import ubicacion from '../imagesCabecera/ubicacion.png';
+import categorias from '../imagesCabecera/barrasrojas.png';
+import cohete from '../imagesCabecera/cohete.png';
+import jbl from '../imagesCabecera/jbl.png';
+import apple from '../imagesCabecera/apple.png';
 import DropdownMenu from './window'; // Asegúrate de que esta ruta sea correcta
+import CarritoEmergente from './Carrito'; // Importa el componente del carrito
 import './Header.css';
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showCarrito, setShowCarrito] = useState(false);
 
   const handleToggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -22,6 +24,25 @@ function Header() {
   const handleCloseDropdown = () => {
     setShowDropdown(false);
   };
+
+  const handleToggleCarrito = () => {
+    setShowCarrito(!showCarrito);
+  };
+
+  const handleCloseCarrito = () => {
+    setShowCarrito(false);
+  };
+
+  // Ejemplo de datos para el carrito
+  const carritoItems = [
+    {
+      name: 'Audífonos Bluetooth True Wireless Apple',
+      description: 'Airpods Pro 2da gen. con estuche de carga tipo C',
+      price: 949.90,
+      quantity: 1,
+      image: 'https://via.placeholder.com/60' // Ruta temporal de la imagen
+    },
+  ];
 
   return (
     <>
@@ -59,12 +80,10 @@ function Header() {
                 <img src={login} alt="Login" />
                 <span>Iniciar sesión</span>
               </button>
-              <a href="/cart">
-                <div className="user-link-container">
-                  <img src={carrito} alt="Carrito" />
-                  <span>Mi carrito</span>
-                </div>
-              </a>
+              <button onClick={handleToggleCarrito} className="user-link-container">
+                <img src={carrito} alt="Carrito" />
+                <span>Mi carrito</span>
+              </button>
             </div>
           </div>
         </div>
@@ -86,8 +105,13 @@ function Header() {
           </nav>
         </div>
 
-        {/* Vista desplegable */}
+        {/* Vista desplegable de inicio de sesión */}
         {showDropdown && <DropdownMenu handleClose={handleCloseDropdown} />}
+
+        {/* Vista emergente del carrito */}
+        {showCarrito && (
+          <CarritoEmergente items={carritoItems} handleCloseCart={handleCloseCarrito} />
+        )}
       </header>
     </>
   );
