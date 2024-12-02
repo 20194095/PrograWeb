@@ -1,0 +1,137 @@
+.product-search-container {
+  margin-top: 120px; /* Espacio amplio entre el header y el contenido */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: calc(100vh - 120px); /* Asegura que cubra toda la altura de la pantalla */
+  background-color: #f4f4f4; /* Fondo claro */
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.search-barr {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Diseño en mosaico */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* Limita el ancho de las tarjetas */
+  text-align: center;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.product-card strong {
+  color: #2c3e50;
+}
+.view-detail-button,
+.add-to-cart-button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-detail-button {
+  background-color: #f0042c;
+  color: white;
+}
+
+.view-detail-button:hover {
+  background-color: #f0042c;
+}
+
+.add-to-cart-button {
+  background-color: #f0042c;
+  color: white;
+}
+
+.add-to-cart-button:hover {
+  background-color: #f0042c;
+}
+
+.product-detail-container {
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  
+}
+
+.product-detail-container h1 {
+  font-size: 28px;
+  color: #204b57;
+  margin-bottom: 20px;
+}
+
+.product-detail-container h2 {
+  color: #3498db;
+}
+
+.product-detail-container p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.product-detail-container p strong {
+  color: #2c3e50;
+}
+
+.back-button {
+  background-color: #f0042c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #f0042c;
+}

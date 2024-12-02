@@ -1,0 +1,150 @@
+.product-list-container {
+    margin-top: 150px; /* Espacio superior para evitar conflictos con el header */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 80px); /* Ajusta la altura para que cubra la pantalla */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .search-barr {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap; /* Mantiene el diseño en mosaico */
+    justify-content: center; /* Centrar horizontalmente las tarjetas */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+     /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.product-card p {
+    margin: 5px;
+    padding-top: 10px;
+    text-align: left; /* Elimina márgenes adicionales */
+}
+  
+  .product-card h2 {
+    font-size: 18px;
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .product-card strong {
+    color: #2c3e50;
+  }
+  
+  .product-detail {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    position: absolute; /* Permite centrar el formulario en la pantalla */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste para centrar exacto */
+    z-index: 100; /* Asegurar que esté sobre otros elementos */
+    margin-top: 100px;
+  }
+  
+  .product-detail h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 90%;
+
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Espacio entre inputs */
+  }
+  
+  .save-button,
+  .cancel-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Espaciado entre los botones */
+  }
+  
+  .save-button:hover,
+  .cancel-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .cancel-button {
+    background-color: #e74c3c;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .edit-button {
+    background-color: #ff0000; /* Rojo brillante */
+    color: white; /* Texto blanco para contraste */
+    border: none; /* Sin borde */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    padding: 10px 20px; /* Relleno para un tamaño adecuado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+    margin-top: 150px; /* Ajusta el margen superior */
+}
+
+.edit-button:hover {
+    background-color: #cc0000; /* Rojo más oscuro al pasar el mouse */
+}
+  

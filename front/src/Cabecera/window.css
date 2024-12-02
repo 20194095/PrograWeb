@@ -1,0 +1,108 @@
+.dropdown-menu {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #f9f9f9; /* Slightly gray background for a softer tone */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-width: 300px;
+    width: 90%;
+    font-family: Arial; /* Improved font */
+    font-weight: 700;
+}
+
+.dropdown-menu h2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.modal-button {
+    background-color: #f0042c;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Rounded edges for button */
+    padding: 12px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.modal-button:hover {
+    background-color: #c00324;
+}
+
+.input-field {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.terms-text {
+    font-size: 12px;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+.forgot-password-link {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  .register-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .register-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .modal-button-secondary {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .modal-button-secondary:hover {
+    background-color: #b3b3b3;
+  }
+  

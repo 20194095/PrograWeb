@@ -1,0 +1,273 @@
+
+
+/* Estilos del encabezado principal con imagen */
+.encabezado-imagen {
+    width: 90%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    border-radius: 25px;
+}
+.encabezado-imagen img {
+    width: 75%;
+    height: auto;
+}
+
+.principal {
+  /* Aquí defines las propiedades CSS */
+  width: 74%;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  padding-left: 250px;
+  border-radius: 25px;
+  
+  /* Puedes añadir más propiedades según tus necesidades */
+}
+
+
+/* Sección de promociones limitadas */
+.promociones-bomba {
+    background-color: #333;
+    color: #fff;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 25px;
+    padding-left: 75px;
+}
+.promociones-bomba h2 {
+    font-size: 1.5em;
+    padding-right: 100px;
+}
+.promociones-bomba .productos {
+    display: flex;
+    
+    justify-content: space-around;
+    
+    padding-right: 50px;
+    
+    margin-top: 10px;
+    width: 300;
+    height: 200px;
+}
+.promociones-bomba .producto {
+    width: 100%;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+.promociones-bomba .producto .precio-promocion {
+    color: #ff0000;
+    font-size: 1.5em;
+}
+
+
+.computo {
+  margin-left: 310px ;
+  margin-top: 20px;
+  border-radius: 25px;
+ 
+
+}
+
+.computo img {
+  border-radius: 25px;
+  
+}
+
+/* COMPUTO */
+.seccion-computo {
+    padding: 20px;
+    background-color: grey;
+    margin-left: 30px;
+    width: 60%;
+}
+.seccion-computo h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ff0000;
+}
+
+.nav2 {
+  margin-top: 20px;
+  margin-left: 200px;
+  background-color: black;
+  width: 80%;
+  border-radius: 25px;
+}
+.nav2 .categorias {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.nav2 .categorias a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.seccion-computo {
+  margin-left: 230px;
+  width: 75%;
+  background-color: #f0f0f0 ;
+  border-radius: 25px;
+  font-weight: 700;
+  
+}
+.seccion-computo .productos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    
+    
+}
+.seccion-computo .producto {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.seccion-computo .producto .precio {
+    color: #ff0000;
+    font-size: 1.5em;
+}
+.seccion-computo .producto .precio-antiguo {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+  }
+
+
+  .footer__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    border-top: none;
+    border-style: unset;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .footer__logo img {
+    width: 500px;
+    height: 75px;
+  }
+  
+  .footer__iconos img {
+    
+    width: 25px;
+    margin: 0 5px;
+    margin-top: 5px;
+  }
+
+  .footer__newsletter{
+    margin-bottom: 10px;
+  }
+  
+  .footer__newsletter form {
+    display: flex;
+  }
+  
+  .footer__newsletter input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .footer__newsletter button {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .footer__sections {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer__columna {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer__columna h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .footer__columna ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .footer__columna ul li, .footer__columna p {
+    margin: 5px 0;
+  }
+  
+  .footer_inferior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .botonVentas {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .flex1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(2, auto); /* Dos filas */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    width: 70%; /* Ajustar al ancho máximo necesario */
+    padding-top: 15px;
+    margin-left: 300px;
+}
+
+.imgflex {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del grid */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+  
+  .flex2 {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    margin-left: 23%;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .imgflex2 {
+    padding: 15px;
+  }

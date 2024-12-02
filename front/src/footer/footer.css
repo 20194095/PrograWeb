@@ -1,0 +1,102 @@
+.footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px 40px; /* Ajustamos el padding para que sea igual que el header */
+  width: 100%;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.footer__contenedor {
+  max-width: 1400px; /* Igual que el header */
+  margin: 0 auto; /* Centra el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+}
+
+.footer__sections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer__columna {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+
+.footer__logo img {
+  width: 500px;
+  height: 75px;
+}
+
+.footer__iconos img {
+  width: 25px;
+  margin: 0 5px;
+  margin-top: 5px;
+}
+
+.footer__newsletter {
+  margin-bottom: 10px;
+}
+
+.footer__newsletter form {
+  display: flex;
+}
+
+.footer__newsletter input[type="email"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer__newsletter button {
+  background-color: #e50914;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+
+.footer__columna h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.footer__columna ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.footer__columna ul li,
+.footer__columna p {
+  margin: 5px 0;
+}
+
+.footer__inferior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botonVentas {
+  background-color: #e50914;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}

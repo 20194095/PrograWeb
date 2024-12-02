@@ -1,0 +1,129 @@
+.resumen-cuenta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+    padding: 20px;
+    font-family: 'Arial'; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    padding-top: 200px;
+  
+    
+  }
+  
+  .subtitulo {
+    color: #444;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .subtitulo2{
+    color: #444;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid #ccc;
+
+  }
+
+  .noorden{
+    padding-left: 315px;
+    padding-bottom: 10px;
+  }
+  
+  .form-container,
+  .orders-container {
+    margin-bottom: 30px;
+    padding-top: 10%;
+   
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-list {
+    list-style-type: none;
+    padding: 0;
+    font: arial;
+    font-size: 14px;
+    margin: 5px
+  }
+
+  .order-list li {
+    margin: 10px;
+  }
+  
+  .order-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status {
+    color: green;
+    font-weight: bold;
+  }
+  
+.button-save {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding-left: 15px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.details-button {
+  background-color: #e50914;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding-left: 15px;
+    margin-top: 10px;
+}

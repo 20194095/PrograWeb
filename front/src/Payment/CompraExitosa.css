@@ -1,0 +1,45 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .success-container h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .success-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .success-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .success-buttons button {
+    padding: 10px 20px;
+    background-color: #f0042c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .success-buttons button:hover {
+    background-color: #f0042c;
+  }
+  
